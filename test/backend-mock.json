@@ -1,0 +1,140 @@
+{
+  "schedule": [
+    {
+      "Id": 1,
+      "Employee": 1,
+      "Department": 1,
+      "StartTime": 1458165600,
+      "EndTime": 1458194400
+    },
+    {
+      "Id": 2,
+      "Employee": 1,
+      "Department": 1,
+      "StartTime": 1458166500,
+      "EndTime": 1458195600
+    },
+    {
+      "Id": 3,
+      "Employee": 2,
+      "Department": 1,
+      "StartTime": 1458165600,
+      "EndTime": 1458194400
+    },
+    {
+      "Id": 4,
+      "Employee": 1,
+      "Department": 1,
+      "StartTime": 1458195600,
+      "EndTime": 1458197400
+    }
+  ],
+  "roles": [
+    {
+      "Id": 1,
+      "Name": "System Administrator",
+      "Parent": 0
+    },
+    {
+      "Id": 2,
+      "Name": "Location Manager",
+      "Parent": 1
+    },
+    {
+      "Id": 3,
+      "Name": "Supervisor",
+      "Parent": 2
+    },
+    {
+      "Id": 4,
+      "Name": "Employee",
+      "Parent": 3
+    },
+    {
+      "Id": 5,
+      "Name": "Trainer",
+      "Parent": 3
+    }
+  ],
+  "users": [
+    {
+      "Id": 1,
+      "Name": "Adam Admin",
+      "Role": 1
+    },
+    {
+      "Id": 2,
+      "Name": "Emily Employee",
+      "Role": 4
+    },
+    {
+      "Id": 3,
+      "Name": "Sam Supervisor",
+      "Role": 3
+    },
+    {
+      "Id": 4,
+      "Name": "Mary Manager",
+      "Role": 2
+    },
+    {
+      "Id": 5,
+      "Name": "Steve Trainer",
+      "Role": 5
+    }
+  ],
+  "rolesDifferentIds": [
+    {
+      "Id": 200,
+      "Name": "System Administrator",
+      "Parent": 0
+    },
+    {
+      "Id": 10,
+      "Name": "Location Manager",
+      "Parent": 1
+    },
+    {
+      "Id": 5,
+      "Name": "Supervisor",
+      "Parent": 2
+    },
+    {
+      "Id": 12,
+      "Name": "Employee",
+      "Parent": 5
+    },
+    {
+      "Id": 7,
+      "Name": "Trainer",
+      "Parent": 5
+    }
+  ],
+  "usersDifferentIds": [
+    {
+      "Id": 1,
+      "Name": "Adam Admin",
+      "Role": 200
+    },
+    {
+      "Id": 2,
+      "Name": "Emily Employee",
+      "Role": 12
+    },
+    {
+      "Id": 3,
+      "Name": "Sam Supervisor",
+      "Role": 5
+    },
+    {
+      "Id": 4,
+      "Name": "Mary Manager",
+      "Role": 10
+    },
+    {
+      "Id": 5,
+      "Name": "Steve Trainer",
+      "Role": 7
+    }
+  ]
+}

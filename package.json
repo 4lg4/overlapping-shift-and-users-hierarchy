@@ -1,0 +1,30 @@
+{
+  "name": "challengeoverlappingshiftandusershierarchy",
+  "version": "1.0.0",
+  "description": "Challenge overlapping shift and users hierarchy",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "mocha ./test/unit/**/* --require test/globals.js",
+    "test:unit:watch": "mocha ./test/unit/**/* --require test/globals.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4lg4/overlapping-shift-and-users-hierarchy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4lg4/overlapping-shift-and-users-hierarchy/issues"
+  },
+  "homepage": "https://github.com/4lg4/overlapping-shift-and-users-hierarchy#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.0.1",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.2.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
