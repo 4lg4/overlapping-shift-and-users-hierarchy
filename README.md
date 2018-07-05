@@ -1,6 +1,7 @@
 # overlapping-shift-and-users-hierarchy
 
 > Challenge overlapping shift and users hierarchy
+[Task requeriments](README-REQUIREMENTS.md)
 
 # Important
 > This Challenge was writen using tests to demonstrate the entire functionalities, so there is no build scripts. If you want to know better about the test cases or add more cases you can add in the test/ folder. Inside de test folder has a file called backend-mock which has the entry samples to be tested. (see Test section)
@@ -10,7 +11,7 @@
 - NPM as dependency manager;
 - Mocha as test framework;
 - Chai as BDD/TDD assertion library;
-- ESLint as lint tool;
+- ESLint as lint tool (google config);
 
 ### Manual installation
 
@@ -45,7 +46,7 @@ $ choco install nodejs.install -version v8.9.4
 ````bash
     npm run test:unit
 ````
- 
+
 ## Author
 **Alga Leal (4lg4)**
 

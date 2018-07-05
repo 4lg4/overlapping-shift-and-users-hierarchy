@@ -50,8 +50,7 @@ const Hierarchy = function Hierarchy() {
 
     return _users
       .filter((user) =>
-        _indexedRoles[Role] &&
-        _indexedRoles[Role].indexOf(user.Role) !== -1 &&
+        _indexedRoles[Role] && _indexedRoles[Role].indexOf(user.Role) !== -1 &&
         user.Id !== Id
       )
       .sort((first, second) => first.Id > second.Id);
