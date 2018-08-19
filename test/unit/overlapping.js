@@ -29,8 +29,27 @@ const forthSchedule = {
   EndTime: 1458197400,
 };
 
+const firstScheduleNew = {
+  Id: 2,
+  Employee: 1,
+  Department: 1,
+  StartTime: 1458194400,
+  EndTime: 1458194600,
+};
+const secondScheduleNew = {
+  Id: 1,
+  Employee: 1,
+  Department: 1,
+  StartTime: 1458165600,
+  EndTime: 1458194500,
+};
+
 describe('overlapping.js', () => {
   describe('isOverlapping', () => {
+    it('should return true if overlapping', () => {
+      expect(isOverlapping(firstScheduleNew, secondScheduleNew)).to.be.true;
+    });
+    
     it('should return true if overlapping', () => {
       expect(isOverlapping(firstSchedule, secondSchedule)).to.be.true;
     });
