@@ -21,9 +21,32 @@ const isOverlapping = (one, two) => {
     throw new Error('Schedule start time should be greater or equal than schedule end time');
   }
 
-  return one.Employee === two.Employee &&
-        two.StartTime >= one.StartTime &&
-        two.StartTime <= one.EndTime;
+  if (one.Employee !== two.Employee) {
+    return false;
+  }
+
+  // can do simply like this but the other way is more scalable and clean
+  // if (one.StartTime > two.StartTime) {
+  //   return two.EndTime >= one.StartTime;
+  // }
+  // return one.EndTime >= two.StartTime;
+
+  const shifts = sortShifts(one, two);
+
+  return shifts[0].EndTime >= shifts[1].StartTime;
+};
+
+const sortShifts = (one, two) => {
+  let shifts = [];
+  if (one.StartTime > two.StartTime) {
+    shifts.push(two);
+    shifts.push(one);
+  } else {
+    shifts.push(one);
+    shifts.push(two);
+  }
+
+  return shifts;
 };
 
 module.exports = {isOverlapping};
